@@ -149,7 +149,7 @@
 		B93B0D021327EE3D00610DF8 /* Editorsimulation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Editorsimulation.mm; path = ../Core3D/Editor/Editorsimulation.mm; sourceTree = "<group>"; };
 		B93BE00112EBA12600234910 /* FocusingCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FocusingCamera.h; path = ../Core3D/SpecialNodes/FocusingCamera.h; sourceTree = SOURCE_ROOT; };
 		B93BE00212EBA12600234910 /* FocusingCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FocusingCamera.mm; path = ../Core3D/SpecialNodes/FocusingCamera.mm; sourceTree = SOURCE_ROOT; };
-		B93EF65B132426520029F8EA /* Core3D-Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Core3D-Editor.app"; path = Core3Ditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93EF65B132426520029F8EA /* Core3Ditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Core3Ditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B942760B12AC3C4E0069F61E /* CollideableMeshBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollideableMeshBullet.h; path = ../Core3D/SpecialNodes/CollideableMeshBullet.h; sourceTree = SOURCE_ROOT; };
 		B942760C12AC3C4E0069F61E /* CollideableMeshBullet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CollideableMeshBullet.mm; path = ../Core3D/SpecialNodes/CollideableMeshBullet.mm; sourceTree = SOURCE_ROOT; };
 		B94DECE2132510A300FF860D /* bullet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = bullet.framework; path = "../Core3D/_DEPENDENCIES/libs-mac/bullet.framework"; sourceTree = SOURCE_ROOT; };
@@ -256,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* Core3Ditor.app */,
-				B93EF65B132426520029F8EA /* Core3D-Editor.app */,
+				B93EF65B132426520029F8EA /* Core3Ditor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -451,7 +451,7 @@
 			name = "Core3D-Editor-WIN32";
 			productInstallPath = "$(HOME)/Applications";
 			productName = "Core3D-Editor";
-			productReference = B93EF65B132426520029F8EA /* Core3D-Editor.app */;
+			productReference = B93EF65B132426520029F8EA /* Core3Ditor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -636,7 +636,7 @@
 				);
 				PREBINDING = NO;
 				SDKROOT = macosx;
-				SYMROOT = /Users/julian/Documents/Development/_BUILD/WINDOWS/;
+				SYMROOT = "$(TARGET_BUILD_DIR)/WINDOWS/";
 				WARNING_CFLAGS = "";
 			};
 			name = Debug;
@@ -660,7 +660,7 @@
 				);
 				PREBINDING = NO;
 				SDKROOT = macosx;
-				SYMROOT = /Users/julian/Documents/Development/_BUILD/WINDOWS/;
+				SYMROOT = "$(TARGET_BUILD_DIR)/WINDOWS/";
 				WARNING_CFLAGS = "";
 			};
 			name = Release;

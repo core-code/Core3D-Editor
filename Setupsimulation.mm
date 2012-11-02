@@ -36,11 +36,14 @@
 		//globalSettings.disableVBLSync = YES;
 		
 		// load editor now
+#ifdef TARGET_OS_MAC
 		dispatch_async(dispatch_get_main_queue(), ^(void)
 		{
+#endif
 			[Editor loadEditor:self];
+#ifdef TARGET_OS_MAC
 		});
-
+#endif
 	}
 	return self;
 }
